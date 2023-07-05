@@ -5,7 +5,7 @@ class Socket {
     if (process.env.NODE_ENV == "production") {
       this.server_host = window.location.origin
     } else {
-      this.server_host = "http://192.168.3.29:5000";
+      this.server_host = "http://127.0.0.1:5000";
     }
     this.socket = io(this.server_host);
   }
